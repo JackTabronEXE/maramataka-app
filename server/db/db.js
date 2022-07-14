@@ -1,7 +1,7 @@
 const connection = require('./connection')
 
 function getDates(db = connection) {
-  db('maramataka')
+  return db('maramataka')
     .join('dates', 'maramataka.id', 'dates.moon_id')
     .select(
       'dates.id as id',
