@@ -5,7 +5,7 @@ exports.up = function (knex) {
     table.string('goodFor')
     table.string('energy')
     table.string('image')
-    table.integer('moonphase_id')
+    table.integer('moonphase_id') //superfluous
   })
 }
 
