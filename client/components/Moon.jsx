@@ -1,14 +1,14 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDates } from '../actions'
-import { format } from 'date-fns'
+import { format, addDays } from 'date-fns'
 import toDate from 'date-fns/toDate'
 
 function Moon() {
   const datesList = useSelector((state) => state.dates)
   const dispatch = useDispatch()
-
-  const date = format(toDate(Date.now()), 'd MMMM y')
+  const [targetDate, setTargetDate] = useState(toDate(Date.now()))
+  const date = format(targetDate, 'd MMMM y')
   const today = datesList.find((day) => {
     return day.DMY == date
   })
@@ -32,6 +32,14 @@ function Moon() {
     <p> {today?.goodFor} </p> 
     <img src={`/images/moonphases/${today?.image}`} alt="dummy" />
     </div>
+    <a
+      className="arrow" onClick={() => {setTargetDate(addDays(targetDate, 1))
+      }}>
+    <div className="arrow">
+    <div className="arrow-top"></div>
+    <div className="arrow-bottom"></div>
+  </div>
+  </a>
   </>
   )}
  
