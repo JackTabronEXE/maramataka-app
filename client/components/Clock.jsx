@@ -15,11 +15,9 @@ function Clock(){
   }, []);
 
   return (
-    <>
-      <div className='clock'>
-      {date.toLocaleTimeString()}
-      </div>
-    </>
+    <div className='clock'> 
+    {date.toLocaleTimeString()}
+    </div>
   );
 }
 export default Clock;
