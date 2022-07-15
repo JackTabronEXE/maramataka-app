@@ -1,10 +1,18 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchDates } from '../actions'
+import { format } from 'date-fns'
+import toDate from 'date-fns/toDate'
 
 function Moon() {
   const datesList = useSelector((state) => state.dates)
   const dispatch = useDispatch()
+
+  const date = format(toDate(Date.now()), 'd MMMM y')
+  const today = datesList.find((day) => {
+    return day.DMY == date
+  })
+  console.log(today ? today.name : 'not yet')
 
   useEffect(() => {
     dispatch(fetchDates())
@@ -15,17 +23,16 @@ function Moon() {
     <> 
  <section>
   <div className="content">
-    <h2>{datesList[0]?.name}</h2>
-    <h2>{datesList[0]?.name}</h2>
+    <h2>{today?.name}</h2>
+    <h2>{today?.name}</h2>
   </div>
 </section>
     <div className="moon-text">
-    <h1> ENERGY: {datesList[0]?.energy.toUpperCase()} </h1>
-    <p> {datesList[0]?.goodFor} </p> 
-    <img src={`/images/moonphases/${datesList[0]?.image}`} alt="dummy" />
+    <h1> ENERGY: {today?.energy.toUpperCase()} </h1>
+    <p> {today?.goodFor} </p> 
+    <img src={`/images/moonphases/${today?.image}`} alt="dummy" />
     </div>
-    </>
-  )
-}
-
+  </>
+  )}
+ 
 export default Moon
