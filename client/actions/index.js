@@ -1,11 +1,19 @@
 import { getDates } from '../apis/apiClient'
 
 export const SET_DATES = 'SET_DATES'
+export const SET_DAY = 'SET_DAY'
 
 export function setDates(dates) {
   return {
     type: SET_DATES,
     payload: dates,
+  }
+}
+
+export function setDay(day) {
+  return {
+    type: SET_DAY,
+    payload: day,
   }
 }
 
