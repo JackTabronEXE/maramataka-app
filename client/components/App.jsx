@@ -1,16 +1,16 @@
 import React from 'react'
-import Header from './Header'
-import Moon from './Moon'
-import Clock from './Clock'
-import Navigator from './Navigator'
+import Dates from './Dates'
 
-function App () {
+function App() {
   return (
     <>
-      <Header />
-      <Moon />
-      <Clock />
-      <Navigator />
+      <header className="header">
+        <h1>My Collection</h1>
+      </header>
+      <section className="main">
+        <Dates />
+        {/* add your code here */}
+      </section>
     </>
   )
 }
