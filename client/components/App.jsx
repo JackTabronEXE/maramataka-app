@@ -2,6 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Moon from './Moon'
 import Clock from './Clock'
+import Navigator from './Navigator'
 
 function App () {
   return (
@@ -9,6 +10,7 @@ function App () {
       <Header />
       <Moon />
       <Clock />
+      <Navigator />
     </>
   )
 }
