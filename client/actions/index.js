@@ -1,4 +1,4 @@
-import { getDates, formatDay } from '../apis/apiClient'
+import { getDates /*formatDay*/ } from '../apis/apiClient'
 
 export const SET_DATES = 'SET_DATES'
 export const SET_DAY = 'SET_DAY'
@@ -26,11 +26,11 @@ export function fetchDates() {
   }
 }
 
-export function getDay() {
-  return (dispatch) => {
-    return formatDay().then((day) => {
-      dispatch(setDay(day))
-      return null
-    })
-  }
-}
+// export function getDay() {
+//   return (dispatch) => {
+//     return formatDay().then((day) => {
+//       dispatch(setDay(day))
+//       return null
+//     })
+//   }
+// }
