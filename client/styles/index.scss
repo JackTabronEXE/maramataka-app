@@ -161,6 +161,21 @@ html {
   margin-left: 8cm;
 }
 
+.moon-image{
+  width: 30%;
+  position: absolute;
+  top: 45%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  text-shadow: 2px 2px;
+  opacity: 0.99;
+}
+
+img {
+  width: 10%;
+  position: absolute;
+}
+
 @import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
 
 * {
@@ -174,7 +189,7 @@ html {
 .content {
   float: left;
   float: left;
-  width: 300px;
+  width: 150px;
   margin-top: 11cm;
   margin-left: 12cm;
 }
@@ -182,7 +197,7 @@ html {
 
 .content h2 {
   color: #fff;
-  font-size: 8em;
+  font-size: 4em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -243,7 +258,7 @@ html {
 .arrow {
   cursor: pointer;
   height: 120px;
-  right: 180px;
+  left: 950px;
   position: absolute;
   float: bottom;
   top: 50%;

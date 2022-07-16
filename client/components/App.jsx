@@ -13,6 +13,7 @@ function App() {
       <Moon />
       <Clock />
       {/* <Navigator /> */}
+      {/* <Footer /> */}
     </>
   )
 }

@@ -30,7 +30,7 @@ function Moon() {
     <div className="moon-text">
     <h1> ENERGY: {today?.energy.toUpperCase()} </h1>
     <p> {today?.goodFor} </p> 
-    <img src={`/images/moonphases/${today?.image}`} alt="dummy" />
+    <img className="moon-image" src={`/images/moonphases/${today?.image}`} alt="dummy" />
     </div>
     <a
       className="arrow" onClick={() => {setTargetDate(addDays(targetDate, 1))
