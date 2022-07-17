@@ -6,6 +6,9 @@ const testDb = knex(config.test)
 
 beforeAll(() => testDb.migrate.latest())
 beforeEach(() => testDb.seed.run())
+afterAll(() => {
+  testDb.destroy()
+})
 
 describe('getDates', () => {
   test('return all dates and maramataka data', () => {
