@@ -10,8 +10,8 @@ router.get('/', (req, res) => {
     .then((result) => {
       res.json(result)
     })
-    .catch((err) => {
-      res.status(500).send(err.message)
+    .catch(() => {
+      res.status(500).send('server error')
     })
 })
 
