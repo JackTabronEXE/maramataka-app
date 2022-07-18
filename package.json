@@ -79,6 +79,7 @@
     "express": "^4.17.2",
     "file-loader": "^6.2.0",
     "knex": "^2.1.0",
+    "mdbreact": "^5.2.0",
     "pg": "^8.7.1",
     "sqlite3": "^5.0.8",
     "superagent": "7.1.1"

@@ -26,6 +26,9 @@ function Moon() {
     <h2>{today?.name}</h2>
     <h2>{today?.name}</h2>
   </div>
+  <div className="date-text">
+    <h2> {today?.DMY.toUpperCase()} </h2>
+  </div>
 </section>
     <div className="moon-text">
     <h1> ENERGY: {today?.energy.toUpperCase()} </h1>
