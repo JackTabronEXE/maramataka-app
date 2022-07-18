@@ -252,7 +252,7 @@ exports.seed = (knex) =>
           goodFor:
             'Time to come together and discuss progress over the month. Reflect on successes, mistakes and important lessons from the month.',
           energy: 'low',
-          image: 'ohau.png',
+          image: 'ohua.png',
           moonphase_id: 28,
         },
         {
