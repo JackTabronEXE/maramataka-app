@@ -4,6 +4,7 @@ import Footer from './Footer'
 import Header from './Header'
 import Moon from './Moon'
 import Navigator from './Navigator'
+import MoonImage from './MoonImage'
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Header />
       <Moon />
       <Clock />
-      <Navigator />
+      {/* <Navigator /> */}
+      <Footer />
     </>
   )
 }
