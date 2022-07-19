@@ -14,6 +14,16 @@ function getDates(db = connection) {
     )
 }
 
+function getContacts(db = connection) {
+  return db('contacts').select()
+}
+
+function addContacts(contact, db = connection) {
+  return db('contacts').insert(contact)
+}
+
 module.exports = {
   getDates,
+  getContacts,
+  addContacts,
 }
