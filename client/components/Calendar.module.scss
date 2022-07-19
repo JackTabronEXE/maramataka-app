@@ -16,9 +16,21 @@ label {
 
 .dateinput {
   background-color: #9fc8db;
+  border-radius:5%;
   margin: .4rem 0;
   margin-left: 65%;
   padding-left: 10px;
   position:relative;
-  z-index:51;
+  z-index:50;
+}
+
+.datebutton {
+  background-color: bisque;
+  border-radius:10%;
+  width: 40px;
+  height: 25px;
+  margin: 10px;
+  padding:2px;
+  position: relative;
+  z-index: 50;
 }
