@@ -32,22 +32,22 @@ svg,img { max-width: 100%; height: auto; }
 /*-----------------------------------------------------------------
   1. >>> Header Style
 ----------------------------------------------------------------*/
-.ds-header{ position: fixed; top: 0; width: 100%; z-index: 10; background-color: rgba(255, 255, 255, 0); padding: 20px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;}
+.ds-header{ position: fixed; top: 0; width: 100%; z-index: 9; background-color: rgba(255, 255, 255, 0); padding: 15px 0;transition-delay: 0s;transition-duration: 0.4s;transition-property: all;transition-timing-function: ease;}
 
 .ds-header.ds-fixed-header{ padding:20px 0;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25); }
 
 .ds-header-inner{ display: flex; justify-content: space-between; align-items: center; }
 
-.ds-logo{ margin: 20px; text-transform: uppercase; font-size: 18px; letter-spacing: 2px; color: rgb(255, 0, 212); display: flex; align-items: center; }
+.ds-logo{ margin: 20px; text-transform: uppercase; font-size: 15px; letter-spacing: 2px; color: rgb(255, 0, 212); display: flex; align-items: center; }
 
-.ds-logo span{ display:flex; align-items: center; justify-content: center; width: 40px; height: 40px; background-color: rgb(255, 0, 183); border-radius: 4px; color: #FFF; font-size: 22px; font-weight: 600; text-align: center; margin-right: 6px; }
+.ds-logo span{ display:flex; align-items: center; justify-content: center; width: 50px; height: 50px; background-color: rgba(255, 0, 212); border-radius: 4px; color: #FFF; font-size: 20px; font-weight: 600; text-align: center; margin-right: 6px; }
 
 .ds-logo:hover{ color: #000; }
 
-.ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; }
+.ds-social{ list-style: none; display: flex; align-items: center; flex-wrap: wrap; color:rgb(255, 255, 255); font-size: 15px; }
 .ds-social li{ margin-left: 12px; }
 .ds-social li:first-child{ margin-left: 0; }
-.ds-social li a{ border-radius: 100%; color: #FFF; width: 24px; height: 24px; background-color: #5500ff; display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
+.ds-social li a{ border-radius: 100%; color: #FFF; width: 24px; height: 24px; background-color: #5500ff00; display:flex; justify-content: center; align-items: center; text-align: center; font-size: 16px; }
 .ds-social li a:hover{ background-color: #000; color: #FFF; }
 /*-----------------------------------------------------------------
   2. >>> Banner Style
@@ -70,54 +70,14 @@ svg,img { max-width: 100%; height: auto; }
 .ds-button{ display: inline-block; text-transform: uppercase;font-size: 12px;line-height: 13px;font-weight: 600;letter-spacing: 3px; color:#F26464; padding:17px 30px;  border: 2px solid #F26464;border-radius: 60px; }
 .ds-button:hover{ background-color:#F26464 ; color: #FFF; }
 .ds-arrow-button i{ display: inline-block; vertical-align: middle; }
-/*-----------------------------------------------------------------
-  4. >>> Skills Style
-----------------------------------------------------------------*/
-.ds-skills-section{ padding-bottom: 105px; }
-.ds-skills-list{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; align-items: center; margin-top: 11px; }
-.ds-skills-list li{ display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
-  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;}
 
-/*-----------------------------------------------------------------
-  5. >>> Experience Style
-----------------------------------------------------------------*/
-.ds-experience-section{ padding-bottom: 120px; }
-.ds-experience-list section{ padding-right: 70px; }
-.ds-experience-list{ padding-top: 15px; }
-.ds-officename{ font-size: 24px; font-weight: 300; margin-bottom:10px; }
-.ds-experience-list span{ display: block; }
-span.ds-year{ color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; }
-span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; }
-.ds-experience-list p{ font-size: 16px; line-height: 24px; font-weight: 300; }
-.ds-experience-list ul{ list-style: none; padding: 0; margin: 0; padding-top: 10px; }
-.ds-experience-list ul li{font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;}
-.ds-experience-list ul li:before{ content: ""; position: absolute; left: 0; top: 10px; border-radius: 100%; width: 8px; height: 8px; background-color: #373737; }
-/*-----------------------------------------------------------------
-  6. >>> Work Style
-----------------------------------------------------------------*/
-.ds-work-section{ padding-bottom: 80px; }
-.ds-work-list{ padding-left: 70px; padding-top:40px; padding-right: 70px; background-color:#F6F8FA; margin-bottom: 40px; }
-.ds-work-list section{ padding-top: 20px; padding-right: 120px; }
-.ds-work-tilte{ color: #000; font-size: 30px; line-height: 36px; font-weight: 600; margin-bottom: 30px; }
-.ds-work-list p{ font-weight: 300; font-size: 18px; line-height: 30px; }
-.ds-work-list .ds-button{ margin-top: 20px; }
-
-.ds-work-det-hed{ padding-top: 42px; padding-bottom: 80px; }
-.ds-work-det-title{ font-weight: 600; color:#000; font-size: 48px; margin-bottom: 20px; }
-.ds-work-det-dep{ display:block;font-weight: 600; color: #000; font-size: 18px; }
-.ds-work-content-sec{ padding: 100px 0; }
-.ds-work-content-sec p{ font-size: 18px; line-height: 36px; margin-bottom: 30px; }
-.ds-work-content-sec h2{ font-size: 30px; font-weight: 700; margin-bottom: 30px; }
-.ds-work-content-sec ul{ list-style: none; padding: 0; margin: 0; }
-.ds-work-content-sec li{font-size: 18px; line-height: 36px;  padding-left: 28px; position:relative; margin-bottom: 20px;}
-.ds-work-content-sec li:before{ content: ""; position: absolute; left: 0; top: 13px; border-radius: 100%; width: 8px; height: 8px; background-color: #373737; };
 /*-----------------------------------------------------------------
   7. >>> Footer Style
 ----------------------------------------------------------------*/
 .footer {
   margin: 0;
     width: 100%;
-    height: 4cm;
+    height: 3.5cm;
     background: #000000;
     position: absolute;
     left: 0;
@@ -133,7 +93,7 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
   padding-left: 2cm;
   color: rgb(255, 255, 255);
   text-align: left;
-  font-size: small;
+  font-size: 11.5px
 }
 
 .form input {
@@ -143,13 +103,19 @@ span.ds-department{ color: #373737; font-weight: 500; font-size: 18px; padding-b
 	box-shadow: 10px;
 	font-family: monospace;
 	justify-content: center;
+  color: rgba(255, 0, 212);
 	float: right;
   margin-top: -1.5cm;
+  margin-right: 6cm;
 }
 
 .form h1 {
   float: right;
   padding: 5px;
+  color: rgba(255, 0, 212);
+  margin-top: -1.25cm;
+  margin-right: 12cm;
+  font-size: 15px;
 }
 
 
@@ -171,8 +137,8 @@ html {
   background-color: rgba(0, 0, 0, 0);
   float: right;
   width: 300px;
-  margin-top: 6cm;
-  margin-right: 20cm;
+  margin-top: 5cm;
+  margin-right: 17cm;
 }
 
 .moon-heading{
@@ -218,15 +184,15 @@ img {
 .content {
   float: left;
   float: left;
-  width: 150px;
+  width: 100px;
   margin-top: 7cm;
-  margin-left: 33.8cm;
+  margin-left: 30.8cm;
 }
 
 
 .content h2 {
   color: #fff;
-  font-size: 5em;
+  font-size: 4.5em;
   position: absolute;
   transform: translate(-50%, -50%);
 }
@@ -278,39 +244,39 @@ img {
   background-color: rgba(0, 0, 0, 0);
   float: right;
   font-weight: 1000;
-  font-size: 50px;
-  margin-top: 4cm;
-  margin-right: -5.25cm;
+  font-size: 40px;
+  margin-top: 3cm;
+  margin-right: -4.12cm;
 }
 
 .date-text {
   font-family: Arial, Helvetica, sans-serif;
   color: rgb(244, 255, 213);
   font-weight: 1000px;
-  font-size: 18px;
+  font-size: 16px;
   letter-spacing: -1px;
   float: left;
   margin-left: -1.5cm;
-  margin-top: 8.5cm;
+  margin-top: 8.3cm;
 }
 
 
 .arrow {
   cursor: pointer;
-  height: 120px;
-  left: 750px;
+  height: 110px;
+  left: 600px;
   position: absolute;
   float: bottom;
-  top: 58.8%;
+  top: 52.6%;
   transform: translateX(-50%) translateY(-50%);
   transition: transform .1s;
-  width: 80px;
+  width: 70px;
   
   $transition-time: .15s;
   
   &-top,
   &-bottom {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(113, 255, 165);
     height: 4px;
     left: -5px;
     position: absolute;
@@ -367,10 +333,92 @@ img {
   }
 }
 
+// *------------------------------------------------------------------------------
+//  BACKWARDS ARROW
+// ------------------------------------------------------------------
+.flipper{
+  transform: scaleX(-1)
+}
 
-/*------------------------------------------------------------------------------
- Responsive XS Style media (max-width: 767px) 
--------------------------------------------------------------------------------*/
+body {
+  background-color: #111;
+}
+
+.arrow2 {
+  cursor: pointer;
+  height: 60px;
+  left: 26.2cm;
+  position: absolute;
+  top: 15.5cm;
+  transform: translateX(-50%) translateY(-50%);
+  transition: transform .1s;
+  width: 40px;
+  
+  $transition-time: .15s;
+  
+  &-top,
+  &-bottom {
+    background-color: rgb(255, 255, 255);
+    height: 4px;
+    left: -5px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+    &:after {
+      background-color: rgb(255, 0, 204);
+      content: '';
+      height: 100%;
+      position: absolute;
+      top: 0;
+      transition: all $transition-time;
+    }
+  }
+  
+  &-top {
+    transform: rotate(45deg);
+    transform-origin: bottom right;
+    
+    &:after {
+      left: 100%;
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+  
+  &-bottom {
+    transform: rotate(-45deg);
+    transform-origin: top right;
+    
+    &:after {
+      left: 0;
+      right: 100%;
+      transition-delay: $transition-time;
+    }
+  }
+  
+  &:hover & {
+    
+    &-top:after {
+      left: 0;
+      transition-delay: $transition-time;
+    }
+
+    &-bottom:after {
+      right: 0;
+      transition-delay: 0s;
+    }
+  }
+  
+  &:active {
+    transform: translateX(-50%) translateY(-50%) scale(0.9);
+  }
+}
+
+
+// *------------------------------------------------------------------------------
+//  Responsive XS Style @media (max-width: 767px) 
+// -------------------------------------------------------------------------------*/
 @media (max-width: 768px) {
 	.ds-header,.ds-header.ds-fixed-header{ padding: 15px 0; }
   .ds-banner,.ds-about-section,.ds-skills-section,.ds-experience-section,.ds-work-section,.ds-work-details-section{ padding-left: 10px; padding-right: 10px; }
@@ -415,4 +463,3 @@ img {
 
 
 }
-

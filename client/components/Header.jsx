@@ -10,7 +10,7 @@ return (
         <span>MJ</span> MARAMATAKA JOURNAL - YOUR DAILY ENERGY
       </a>
       <ul className="ds-social">
-        <li><a href="#" target="_blank"><i className="ri-github-fill"></i></a></li>
+      <span> Ko to pukapuka maramataka o ia ra</span>
         <li><a href="#" target="_blank"><i className="ri-stack-overflow-line"></i></a></li>
         <li><a href="#" target="_blank"><i className="ri-linkedin-fill"></i></a></li>
       </ul>
