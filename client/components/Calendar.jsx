@@ -1,24 +1,29 @@
 import React, { useState } from 'react'
 import { format } from 'date-fns'
-import { useDispatch } from 'react-redux'
-import { setDay } from '../actions'
+import { useSearchParams } from 'react-router-dom'
 import styles from './Calendar.module.scss'
 
 export default function Calendar() {
-  const dispatch = useDispatch()
-  const [targetDate, setTargetDate] = useState(
-    new Date().toISOString().split('T')[0]
-  )
+  const [searchParams, setSearchParams] = useSearchParams()
 
+  const today = new Date().toISOString()
+  // format(new Date(Date.now()), 'd MMMM y')
+
+  const dateString = searchParams.get('date') || today
+  console.log(dateString)
+  const isoDate = new Date(dateString).toISOString().split('T')[0]
+  // refactoring into own file? toLocaleString()?
+
+  const [chosenDate, setChosenDate] = useState(isoDate)
   function handleChange(e) {
     e.preventDefault()
-    setTargetDate(e.target.value)
+    setChosenDate(e.target.value)
   }
 
   function changeMoon(e) {
     e.preventDefault()
-    const date = format(new Date(targetDate), 'd MMMM y')
-    dispatch(setDay(date))
+    const date = format(new Date(chosenDate), 'd MMMM y')
+    setSearchParams({ date })
   }
 
   return (
@@ -30,13 +35,10 @@ export default function Calendar() {
         className={styles.dateinput}
         type="date"
         id="selectDate"
-        defaultValue={targetDate}
+        value={chosenDate}
         name="select-date"
         min="2022-07-14"
         max="2022-12-10"
-        // onFocus={() => {
-        //   console.log('Focus!')
-        // }}
         onChange={(e) => handleChange(e)}
       />
       <button className={styles.datebutton} onClick={(e) => changeMoon(e)}>
