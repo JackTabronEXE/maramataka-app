@@ -6,15 +6,19 @@ import toDate from 'date-fns/toDate'
 
 function Moon() {
   const datesList = useSelector((state) => state.dates)
+  const inputDay = useSelector((state) => state.day)
+  // whenever state changes, update 'date' or 'find today == inputDay'
+
   const dispatch = useDispatch()
   const [targetDate, setTargetDate] = useState(toDate(Date.now()))
-  const date = format(targetDate, 'd MMMM y')
+  // const date = inputDay
   const today = datesList.find((day) => {
-    return day.DMY == date
+    return day.DMY == inputDay
   })
 
   useEffect(() => {
     dispatch(fetchDates())
+    console.log('Moon gets data?', inputDay)
   }, [])
 
   // return <img src={`/images/moonphases/${datesList[0]?.image}`} alt="dummy" />

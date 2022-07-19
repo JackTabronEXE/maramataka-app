@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-// import { format } from 'date-fns'
+import { format } from 'date-fns'
 import { useDispatch } from 'react-redux'
+import { setDay } from '../actions'
 import styles from './Calendar.module.scss'
 
 export default function Calendar() {
@@ -11,19 +12,13 @@ export default function Calendar() {
 
   function handleChange(e) {
     e.preventDefault()
-    // const now = e.target.value
-    // const timestamp = now.toISOString()
     setTargetDate(e.target.value)
-    console.log('Change react state to', e.target.value)
   }
 
   function changeMoon(e) {
     e.preventDefault()
-    //dispatch(setDay())
-
-    // I can't use format on the datepicker return date (yyyy-mm-dd)
-    // I could convert the element into a string then return a substring for each part of the date and ship those?
-    // const date = format(targetDate, 'd MMMM y')
+    const date = format(new Date(targetDate), 'd MMMM y')
+    dispatch(setDay(date))
   }
 
   return (
