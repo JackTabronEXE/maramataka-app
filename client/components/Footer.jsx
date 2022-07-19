@@ -4,10 +4,13 @@ import { addUser } from '../apis/contacts'
 function Footer() {
   const [email, setEmail] = useState('')
 
+  const [subscribed, setSubscribed] = useState(false)
+
   const handleSubmit = (e) => {
     e.preventDefault()
     addUser(email)
     setEmail('')
+    setSubscribed(true)
   }
 
   // useEffect(() => {
@@ -50,19 +53,23 @@ function Footer() {
               <div className="form h1">
                 <h1> SIGN-UP FOR UPDATES: </h1>
               </div>
-              <form className="form" onSubmit={handleSubmit}>
-                <input
-                  type="text"
-                  placeholder="Your E-mail"
-                  id="email"
-                  name="email"
-                  value={email}
-                  onChange={(event) => setEmail(event.target.value)}
-                />
-                <button className="hidden" type="submit">
-                  {'Submit'.toUpperCase()}
-                </button>
-              </form>
+              {subscribed ? (
+                <h1 className="thankyou">Thank you for signing up!</h1>
+              ) : (
+                <form className="form" onSubmit={handleSubmit}>
+                  <input
+                    type="text"
+                    placeholder="Your E-mail"
+                    id="email"
+                    name="email"
+                    value={email}
+                    onChange={(event) => setEmail(event.target.value)}
+                  />
+                  <button className="hidden" type="submit">
+                    {'Submit'.toUpperCase()}
+                  </button>
+                </form>
+              )}
             </div>
           </div>
         </footer>

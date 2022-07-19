@@ -118,6 +118,19 @@ svg,img { max-width: 100%; height: auto; }
   font-size: 15px;
 }
 
+.thankyou {
+  padding: 15px;
+	text-align: center;
+	border-radius:10px;
+	box-shadow: 10px;
+	font-family: monospace;
+	justify-content: center;
+  color: rgb(255, 254, 255);
+	float: right;
+  margin-top: -1.5cm;
+  margin-right: 6cm;
+}
+
 .hidden {
  float: right;
  margin-top: -1.25cm;
