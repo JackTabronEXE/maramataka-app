@@ -43,6 +43,15 @@ function Moon() {
     <div className="arrow-bottom"></div>
   </div>
   </a>
+  <a className="flipper" onClick={() => {setTargetDate(addDays(targetDate, -1))
+      }}>
+  <div className='flipper'>
+  <div className="arrow2">
+  <div className="arrow2-top"></div>
+  <div className="arrow2-bottom"></div>
+  </div>
+</div>
+</a>
   </>
   )}
  
