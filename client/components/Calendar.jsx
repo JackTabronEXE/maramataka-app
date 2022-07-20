@@ -27,7 +27,7 @@ export default function Calendar() {
   }
 
   return (
-    <form className={styles.form}>
+    <form className={styles.calendar}>
       <label htmlFor="selectDate" className={styles.label}>
         Select date:{' '}
       </label>
@@ -42,7 +42,7 @@ export default function Calendar() {
         onChange={(e) => handleChange(e)}
       />
       <button className={styles.datebutton} onClick={(e) => changeMoon(e)}>
-        Go
+        GO
       </button>
     </form>
   )
