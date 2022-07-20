@@ -8,4 +8,4 @@ We currently provide data up to Dec 10 2020. When you first load the app, it wil
 Sign up for our mailing list via the app to be notified about updates to this project.
 
 ## Credit
-This app was built by Mere Mansell, Jack Tabron and Naomi Joy Smith for our final project on a bootcamp run by Dev Academy Aotearoa. Shoutout to the various people involved with [Healthy Families New Zealand](https://www.health.govt.nz/our-work/preventative-health-wellness/healthy-families-nz) upon which our maramataka data is based.
+This app was built by Mere Mansell, Jack Tabron and Naomi Joy Smith for our final project on a bootcamp run by [Dev Academy Aotearoa](https://devacademy.co.nz/). Shoutout to the various people involved with [Healthy Families New Zealand](https://www.health.govt.nz/our-work/preventative-health-wellness/healthy-families-nz) upon which our maramataka data is based.
