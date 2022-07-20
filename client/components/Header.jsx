@@ -11,7 +11,7 @@ function Header() {
               <span>MJ</span> MARAMATAKA JOURNAL - YOUR DAILY ENERGY
             </a>
             <ul className="ds-social">
-              <span> Ko to pukapuka maramataka o ia ra</span>
+              <span> Ngā Mata o te Marama</span>
               <li>
                 <a href="#" target="_blank">
                   <i className="ri-stack-overflow-line"></i>
