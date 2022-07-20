@@ -25,7 +25,8 @@
   "author": "EDA",
   "license": "MIT",
   "engines": {
-    "node": "16.x"},
+    "node": "16.x"
+  },
   "babel": {
     "presets": [
       "@babel/preset-typescript",
@@ -84,7 +85,7 @@
     "file-loader": "^6.2.0",
     "knex": "^2.1.0",
     "mdbreact": "^5.2.0",
-    "pg": "^8.7.1",
+    "pg": "^8.7.3",
     "react-router": "^6.3.0",
     "sqlite3": "^5.0.8",
     "superagent": "7.1.1"

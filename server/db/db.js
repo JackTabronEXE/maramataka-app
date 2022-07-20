@@ -19,7 +19,7 @@ function getContacts(db = connection) {
 }
 
 function addContacts(contact, db = connection) {
-  return db('contacts').insert(contact)
+  return db('contacts').insert(contact, 'id')
 }
 
 module.exports = {
