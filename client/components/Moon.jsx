@@ -52,7 +52,7 @@ function Moon() {
           alt="dummy"
         />
       </div>
-      <a className="arrow" onClick={() => handleClick(1)}>
+      <a onClick={() => handleClick(1)}>
         <div className="arrow">
           <div className="arrow-top"></div>
           <div className="arrow-bottom"></div>
