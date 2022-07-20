@@ -1,6 +1,6 @@
 exports.up = function (knex) {
   return knex.schema.createTable('maramataka', function (table) {
-    table.integer('id').primary().references()
+    table.integer('id').primary()
     table.string('name')
     table.string('goodFor')
     table.string('energy')
