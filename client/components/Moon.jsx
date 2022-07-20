@@ -49,7 +49,7 @@ function Moon() {
         <img
           className="moon-image"
           src={`/images/moonphases/${targetDay?.image}`}
-          alt="dummy"
+          alt="How the moon will look on this day"
         />
       </div>
       <a onClick={() => handleClick(1)}>
