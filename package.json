@@ -1,8 +1,8 @@
 {
-  "name": "my-fullstack-collection",
-  "version": "0.1.0",
-  "description": "Todo Full Stack",
-  "repository": "https://https://github.com/dev-academy-challenges/todo-full-stack",
+  "name": "maramataka-app",
+  "version": "1.0.0",
+  "description": "Maramataka, Māori Lunar Calendar",
+  "repository": "https://github.com/mako-goblin-2022/lunartics/",
   "main": "server/index.js",
   "scripts": {
     "build": "run-p build:client build:server",
@@ -20,10 +20,12 @@
     "lint": "eslint --ext .js,.jsx ."
   },
   "keywords": [
-    "fullstack"
+    "maramataka, moon, lunar, calendar, mātauranga, planning"
   ],
   "author": "EDA",
-  "license": "ISC",
+  "license": "MIT",
+  "engines": {
+    "node": "16.x"},
   "babel": {
     "presets": [
       "@babel/preset-typescript",
