@@ -9,9 +9,8 @@ router.get('/', (req, res) => {
       res.json({ results })
       return null
     })
-    .catch((err) => {
-      console.log(err)
-      res.status(500).json({ message: 'Somthing went wrong' })
+    .catch(() => {
+      res.status(500).json({ message: 'Something went wrong' })
     })
 })
 
@@ -20,9 +19,8 @@ router.post('/add', (req, res) => {
     .then(() => {
       res.redirect('/add')
     })
-    .catch((err) => {
-      console.log(err)
-      res.status(500).json({ message: 'Somthing went wrong' })
+    .catch(() => {
+      res.status(500).json({ message: 'Something went wrong' })
     })
 })
 
