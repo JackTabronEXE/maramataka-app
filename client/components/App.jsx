@@ -5,8 +5,6 @@ import Footer from './Footer'
 import Header from './Header'
 import Moon from './Moon'
 import Calendar from './Calendar'
-import Navigator from './Navigator'
-import MoonImage from './MoonImage'
 
 function Home() {
   return (
@@ -15,7 +13,6 @@ function Home() {
       <Calendar />
       <Moon />
       <Clock />
-      {/* <Navigator /> */}
       <Footer />
     </>
   )

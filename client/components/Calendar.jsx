@@ -7,12 +7,9 @@ export default function Calendar() {
   const [searchParams, setSearchParams] = useSearchParams()
 
   const today = new Date().toISOString()
-  // format(new Date(Date.now()), 'd MMMM y')
 
   const dateString = searchParams.get('date') || today
-  console.log(dateString)
   const isoDate = new Date(dateString).toISOString().split('T')[0]
-  // refactoring into own file? toLocaleString()?
 
   const [chosenDate, setChosenDate] = useState(isoDate)
   function handleChange(e) {
@@ -47,5 +44,3 @@ export default function Calendar() {
     </form>
   )
 }
-
-// export default Calendar
